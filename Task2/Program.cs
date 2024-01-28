@@ -18,10 +18,10 @@
         public static void ReadFile(string fileName)
         {
             var file = new FileInfo(fileName);
-            if(file.Exists)
+            if (file.Exists)
             {
                 StreamReader streamReader = file.OpenText();
-                while(streamReader.Peek() != -1)
+                while (streamReader.Peek() != -1)
                 {
                     string line = streamReader.ReadLine();
                     Console.WriteLine(line);
@@ -33,7 +33,7 @@
                 Console.WriteLine("file {0} does not exist", fileName);
             }
         }
-        
+
 
         static void Main(string[] args)
         {
